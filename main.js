@@ -3,8 +3,6 @@ const differenceNumbers = (a, b) => a - b;
 const multiplicationNumbers = (a, b) => a * b;
 const dividingNumbers = (a, b) => a / b;
 
-let result = (function (a, b, func) {
-	return func (a, b);
-})(15, 5, addingNumbers);
+const result = (function (a, b, func) {return func(a, b);})(10, 5, multiplicationNumbers);
 
-console.log(result);
+document.write(`<h1 align="center">Результат: ${result}</h1>`);
