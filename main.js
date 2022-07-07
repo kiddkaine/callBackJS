@@ -1,21 +1,10 @@
-const addingNumbers = function (a, b) {
-	return a + b;
-}
+const addingNumbers = (a, b) => a + b;
+const differenceNumbers = (a, b) => a - b;
+const multiplicationNumbers = (a, b) => a * b;
+const dividingNumbers = (a, b) => a / b;
 
-const differenceNumbers = function (a, b) {
-	return a - b;
-}
-
-const multiplicationNumbers = function (a, b) {
-	return a * b;
-}
-
-const dividingNumbers = function (a, b) {
-	return a / b;
-}
-
-let result = (function mainFunc (a, b, func) {
+let result = (function (a, b, func) {
 	return func (a, b);
-})(10, 5, differenceNumbers);
+})(15, 5, addingNumbers);
 
 console.log(result);
