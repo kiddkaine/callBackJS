@@ -14,10 +14,8 @@ const dividingNumbers = function (a, b) {
 	return a / b;
 }
 
-function mainFunc (a, b, func) {
+let result = (function mainFunc (a, b, func) {
 	return func (a, b);
-}
+})(10, 5, differenceNumbers);
 
-let result = mainFunc (10, 5, addingNumbers);
-
-alert(result);
+console.log(result);
